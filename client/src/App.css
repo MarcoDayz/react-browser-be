@@ -1,0 +1,81 @@
+:root {
+  --background: grey;
+  --pageBackground:  rgb(222, 219, 219);
+  --formBackground: rgb(242, 242, 242);
+  --borderColor: rgb(38, 38, 38);
+  --highlights: aqua;
+}
+
+*{
+  margin: 0;
+}
+
+body{
+  background-color: var(--pageBackground);
+}
+
+input[inputbutton='true']{
+  background-color: var(--pageBackground);
+  border-radius: .3rem;
+}
+input[inputbutton='true']:hover{
+  cursor: pointer;
+  background-color: var(--highlights);
+}
+
+.links:hover{
+  color: aqua;
+  cursor: pointer;
+}
+
+.logo{
+  color: aqua;
+}
+
+.navbar,
+.navbar-opts{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 3rem;
+  background-color: var(--background);
+}
+
+.navbar-opts{
+  gap: 2rem;
+}
+
+.main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50rem;
+}
+
+.welcome{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 20rem;
+  width: 25rem;
+  margin: 0rem;
+  gap: 2rem;
+  background-color: var(--formBackground);
+  border: solid var(--borderColor) 3px;
+  border-radius: 1rem;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  width: 20rem;
+  height: 20rem;
+  background-color: var(--formBackground);
+  border: solid var(--borderColor) 3px;
+  border-radius: 1rem;
+}
